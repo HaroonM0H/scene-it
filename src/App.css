@@ -1,0 +1,24 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.text-appear {
+  animation-name: text-appear;
+  animation-duration: 2s;
+  margin-top: -32px; /* Move up so it appears from behind the title */
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes text-appear {
+  from{
+    opacity: 0;
+    transform: translate(0px, -20px)
+  }
+  to{
+    opacity: 1;
+  }
+}
